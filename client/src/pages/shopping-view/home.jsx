@@ -16,6 +16,14 @@ import {
   UmbrellaIcon,
   WashingMachine,
   WatchIcon,
+  HeadsetIcon,
+  Footprints,
+  CheckCheck,
+  TrendingUp,
+  Apple,
+  AppWindow,
+  CircleArrowOutUpLeft,
+  CircleArrowOutUpRight
 } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { useEffect, useState } from "react";
@@ -33,19 +41,20 @@ import { getFeatureImages } from "@/store/common-slice";
 
 const categoriesWithIcon = [
   { id: "men", label: "Men", icon: ShirtIcon },
-  { id: "women", label: "Women", icon: CloudLightning },
-  { id: "kids", label: "Kids", icon: BabyIcon },
+  { id: "women", label: "Women", icon: CircleArrowOutUpRight },
+  { id: "tech", label: "Tech Products", icon: HeadsetIcon },
   { id: "accessories", label: "Accessories", icon: WatchIcon },
-  { id: "footwear", label: "Footwear", icon: UmbrellaIcon },
+  { id: "footwear", label: "Footwear", icon: Footprints },
+  
 ];
 
 const brandsWithIcon = [
-  { id: "nike", label: "Nike", icon: Shirt },
-  { id: "adidas", label: "Adidas", icon: WashingMachine },
-  { id: "puma", label: "Puma", icon: ShoppingBasket },
-  { id: "levi", label: "Levi's", icon: Airplay },
-  { id: "zara", label: "Zara", icon: Images },
-  { id: "h&m", label: "H&M", icon: Heater },
+  { id: "nike", label: "Nike", icon: CheckCheck },
+  { id: "adidas", label: "Adidas", icon: TrendingUp },
+  { id: "apple", label: "Apple", icon: Apple },
+  { id: "dell", label: "Dell", icon: AppWindow },
+  { id: "zara", label: "Zara", icon: Shirt },
+  { id: "h&m", label: "H&M", icon: Shirt },
 ];
 function ShoppingHome() {
   const [currentSlide, setCurrentSlide] = useState(0);

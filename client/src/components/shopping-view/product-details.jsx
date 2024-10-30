@@ -107,7 +107,7 @@ function ProductDetailsDialog({ open, setOpen, productDetails }) {
   return (
     <Dialog open={open} onOpenChange={handleDialogClose}>
       <DialogContent className="grid grid-cols-2 gap-8 sm:p-12 max-w-[90vw] sm:max-w-[80vw] lg:max-w-[70vw]">
-        <div className="relative overflow-hidden rounded-lg">
+        <div className="relative overflow-hidden rounded-lg" >
           <img
             src={productDetails?.image}
             alt={productDetails?.title}
@@ -118,21 +118,21 @@ function ProductDetailsDialog({ open, setOpen, productDetails }) {
         </div>
         <div className="">
           <div>
-            <h1 className="text-3xl font-extrabold">{productDetails?.title}</h1>
-            <p className="text-muted-foreground text-2xl mb-5 mt-4">
+            <h1 className="text-md font-extrabold">{productDetails?.title}</h1>
+            <p className="text-muted-foreground text-sm mb-5 mt-4">
               {productDetails?.description}
             </p>
           </div>
           <div className="flex items-center justify-between">
             <p
-              className={`text-3xl font-bold text-primary ${
+              className={`text-md font-bold text-primary ${
                 productDetails?.salePrice > 0 ? "line-through" : ""
               }`}
             >
               ${productDetails?.price}
             </p>
             {productDetails?.salePrice > 0 ? (
-              <p className="text-2xl font-bold text-muted-foreground">
+              <p className="text-md font-bold text-muted-foreground">
                 ${productDetails?.salePrice}
               </p>
             ) : null}
@@ -147,7 +147,7 @@ function ProductDetailsDialog({ open, setOpen, productDetails }) {
           </div>
           <div className="mt-5 mb-5">
             {productDetails?.totalStock === 0 ? (
-              <Button className="w-full opacity-60 cursor-not-allowed">
+              <Button className="w-full opacity-60 cursor-not-allowed text-sm">
                 Out of Stock
               </Button>
             ) : (
@@ -166,11 +166,11 @@ function ProductDetailsDialog({ open, setOpen, productDetails }) {
           </div>
           <Separator />
           <div className="max-h-[300px] overflow-auto">
-            <h2 className="text-xl font-bold mb-4">Reviews</h2>
+            <h2 className="text-md font-bold mb-4">Reviews</h2>
             <div className="grid gap-6">
               {reviews && reviews.length > 0 ? (
                 reviews.map((reviewItem) => (
-                  <div className="flex gap-4">
+                  <div className="flex gap-4 text-sm">
                     <Avatar className="w-10 h-10 border">
                       <AvatarFallback>
                         {reviewItem?.userName[0].toUpperCase()}
@@ -193,7 +193,7 @@ function ProductDetailsDialog({ open, setOpen, productDetails }) {
                 <h1>No Reviews</h1>
               )}
             </div>
-            <div className="mt-10 flex-col flex gap-2">
+            <div className="mt-10 flex-col flex gap-2 text-sm">
               <Label>Write a review</Label>
               <div className="flex gap-1">
                 <StarRatingComponent

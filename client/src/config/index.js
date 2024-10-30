@@ -60,7 +60,7 @@ export const addProductFormElements = [
     options: [
       { id: "men", label: "Men" },
       { id: "women", label: "Women" },
-      { id: "kids", label: "Kids" },
+      { id: "tech", label: "Tech Products" },
       { id: "accessories", label: "Accessories" },
       { id: "footwear", label: "Footwear" },
     ],
@@ -72,8 +72,8 @@ export const addProductFormElements = [
     options: [
       { id: "nike", label: "Nike" },
       { id: "adidas", label: "Adidas" },
-      { id: "puma", label: "Puma" },
-      { id: "levi", label: "Levi's" },
+      { id: "apple", label: "Apple" },
+      { id: "dell", label: "Dell" },
       { id: "zara", label: "Zara" },
       { id: "h&m", label: "H&M" },
     ],
@@ -123,8 +123,8 @@ export const shoppingViewHeaderMenuItems = [
     path: "/shop/listing",
   },
   {
-    id: "kids",
-    label: "Kids",
+    id: "tech",
+    label: "Tech Products",
     path: "/shop/listing",
   },
   {
@@ -147,7 +147,7 @@ export const shoppingViewHeaderMenuItems = [
 export const categoryOptionsMap = {
   men: "Men",
   women: "Women",
-  kids: "Kids",
+  tech: "Tech Products",
   accessories: "Accessories",
   footwear: "Footwear",
 };
@@ -155,8 +155,8 @@ export const categoryOptionsMap = {
 export const brandOptionsMap = {
   nike: "Nike",
   adidas: "Adidas",
-  puma: "Puma",
-  levi: "Levi",
+  apple: "Apple",
+  dell: "dell",
   zara: "Zara",
   "h&m": "H&M",
 };
@@ -165,15 +165,15 @@ export const filterOptions = {
   category: [
     { id: "men", label: "Men" },
     { id: "women", label: "Women" },
-    { id: "kids", label: "Kids" },
+    { id: "tech", label: "Tech Products" },
     { id: "accessories", label: "Accessories" },
     { id: "footwear", label: "Footwear" },
   ],
   brand: [
     { id: "nike", label: "Nike" },
     { id: "adidas", label: "Adidas" },
-    { id: "puma", label: "Puma" },
-    { id: "levi", label: "Levi's" },
+    { id: "apple", label: "Apple" },
+    { id: "dell", label: "Dell" },
     { id: "zara", label: "Zara" },
     { id: "h&m", label: "H&M" },
   ],

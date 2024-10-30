@@ -1,4 +1,5 @@
 import { HousePlug, LogOut, Menu, ShoppingCart, UserCog } from "lucide-react";
+import { IoLogoDeviantart } from "react-icons/io5";
 import {
   Link,
   useLocation,
@@ -79,7 +80,7 @@ function HeaderRightContent() {
     dispatch(fetchCartItems(user?.id));
   }, [dispatch]);
 
-  console.log(cartItems, "sangam");
+  console.log(cartItems, "pranav");
 
   return (
     <div className="flex lg:items-center lg:flex-row flex-col gap-4">
@@ -139,8 +140,8 @@ function ShoppingHeader() {
     <header className="sticky top-0 z-40 w-full border-b bg-background">
       <div className="flex h-16 items-center justify-between px-4 md:px-6">
         <Link to="/shop/home" className="flex items-center gap-2">
-          <HousePlug className="h-6 w-6" />
-          <span className="font-bold">Ecommerce</span>
+          <IoLogoDeviantart  className="h-6 w-6" />
+          <span className="font-bold">X Shop</span>
         </Link>
         <Sheet>
           <SheetTrigger asChild>
