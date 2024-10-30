@@ -25,10 +25,10 @@ mongoose
 
 const app = express();
 const PORT = process.env.PORT || 5000;
-
+  
 app.use(
   cors({
-    origin: "*", // Allow all origins for testing
+    origin: ["http://localhost:5173", "https://ecommerce-gamma-wine.vercel.app"], // Add Vercel link without trailing slashes
     methods: ["GET", "POST", "DELETE", "PUT"],
     allowedHeaders: [
       "Content-Type",
@@ -37,7 +37,7 @@ app.use(
       "Expires",
       "Pragma",
     ],
-    credentials: true,
+    credentials: true, // Required for cookies and credentials
   })
 );
 
